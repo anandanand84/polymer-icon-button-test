@@ -1,0 +1,6 @@
+{
+  "name": "polymer-icon-button-test",
+  "short_name": "polymer-icon-button-test",
+  "start_url": "/",
+  "display": "standalone"
+}

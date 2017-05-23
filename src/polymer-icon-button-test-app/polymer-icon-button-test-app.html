@@ -1,0 +1,36 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+
+<dom-module id="polymer-icon-button-test-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <paper-icon-button icon="menu"></paper-icon-button>
+    <paper-icon-button icon="favorite"></paper-icon-button>
+    <paper-icon-button icon="icons:menu"></paper-icon-button>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class PolymerIconButtonTestApp extends Polymer.Element {
+      static get is() { return 'polymer-icon-button-test-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'polymer-icon-button-test-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(PolymerIconButtonTestApp.is, PolymerIconButtonTestApp);
+  </script>
+</dom-module>
